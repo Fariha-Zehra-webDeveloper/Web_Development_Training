@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+body, h1, h2, p, ul, li, a, img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background-color: #fafbfb;
+    overflow-x: hidden;
+}
+
+nav {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px 0px 100px;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+nav ul li {
+    margin: 0 5px;
+}
+nav ul li a {
+    color: #506690;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 8px 10px;
+    transition: all 0.3s ease;
+}
+nav ul li a:hover {
+    color: #3B82F6;
+}
+nav .menu-btn i {
+    color: #506690;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
+}
+nav .logo {
+    font-size: 33px;
+    font-weight: 600;
+    color: #3B82F6;
+}
+#click {
+    display: none;
+}
+
+.wrapper {
+    width: 100%;
+    padding: 10rem 50px 10rem 100px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10rem;
+    flex-wrap: wrap;
+}
+
+.grid-cols-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    width: 100%;
+}
+
+.main-heading {
+    font-size: 36px;
+    color: #161C2D;
+}
+
+.main-heading span {
+    color: #3B82F6;
+}
+
+.info-text {
+    margin-top: 1rem;
+    font-size: 16px;
+    color: #6B7280;
+}
+
+.btn_wrapper {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.view_more_btn {
+    background-color: #3B82F6;
+    color: #fff;
+}
+
+.view_more_btn:hover {
+    background-color: #2563EB;
+}
+
+.documentation_btn {
+    background-color: #E1E7FC;
+    color: #0E2A86;
+}
+
+.documentation_btn:hover {
+    background-color: #D7DDF1;
+}
+
+.team_img_wrapper {
+    max-width: 90%;
+    height: auto;
+    padding-right: 50px; 
+}
+
+.team_img_wrapper img {
+    width: 90%;
+    object-fit: contain;
+}
+footer {
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+  }
+  
+  .cta-banner {
+    background-color: #f0eaff;
+    color: #6a47c2;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 20px;
+    margin: 40px 20px;
+  }
+  
+  .cta-banner h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .cta-banner button {
+    background-color: #6a47c2;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .main-footer {
+    background-color: #11192a;
+    padding: 60px 20px;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-logo span {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .footer-column {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .footer-column h4 {
+    color: #a4a9b5;
+    margin-bottom: 15px;
+    font-weight: 500;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-column ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-column ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .newsletter p {
+    margin-bottom: 15px;
+  }
+  
+  .newsletter form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .newsletter input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .newsletter button {
+    background-color: #6a47c2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .cta-banner h2 {
+      font-size: 1.5rem;
+    }
+  
+    .footer-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .newsletter form {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .newsletter input[type="email"],
+    .newsletter button {
+      width: 100%;
+    }
+  }
+  
+@media (max-width: 940px) {
+    nav ul {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background: #111;
+        height: 40vh;
+        width: 50%;
+        display: block;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    #click:checked ~ .menu-btn i:before {
+        content: '\f00d';
+    }
+
+    #click:checked ~ ul {
+        left: 0%;
+    }
+
+    nav ul li {
+        margin: 40px 0;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    nav .menu-btn i {
+        display: block;
+    }
+
+    .wrapper {
+        padding: 2rem 1rem;
+    }
+
+    .grid-item-1 {
+        padding-left: 0; 
+    }
+    .team_img_wrapper {
+        padding-right: 0; 
+    }
+}
